@@ -1,0 +1,26 @@
+<script>
+    let obj={
+        a:10,
+        b:20;
+        f1: function(){//this=obj
+            console.log('inside f1',this.a,this.b);//this=obj
+
+            function f2(){
+                console.log('inside f2: ',this);//this =window
+                console.log('inside f2:', obj.a,obj.b);
+            }
+            f2();//when a regular function is called directly always inside that function this value is pointing to window
+
+            let f3=()=>{
+                console.log('inside f3:', this);//this=lexical scope=f1=obj
+                
+                let f4=()=>{
+                    console.log('inside f4:',this);//this=obj
+                }
+                f4();
+            }
+            f3();
+        }   
+    }
+    obj.f1();
+</script>

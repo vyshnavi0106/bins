@@ -1,0 +1,24 @@
+<script>
+    //functiondeclaration
+    function add(a,b){
+        console.log(`Addition of ${a} & ${b} is ${a+b}`);
+    }
+    add(20,20);
+
+    //Function expression
+    let sub=function(a,b){
+        comsole.log(`substraction of ${a} & ${b} is ${a-b}`);
+    }
+    sub(30,20);
+
+    //self-invoked
+    (function(a,b){
+        console.log(`Multiplication of ${a} & ${b} is ${a*b}`);
+    })(10,20);
+
+    //arrow function
+    let div=(a,b)=>{
+        comsole.log(`Division of ${a} & ${b} is ${a/b}`);
+    }
+    div(30,20);
+</script>

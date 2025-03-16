@@ -1,0 +1,12 @@
+<script>
+    //'use strict' //this throws an error if variables are not declared.
+    a=10; //this works fine if we don't use 'use strict'.
+    console.log('a is:: ',a);
+
+    function f1(){
+        'use strict'
+        b=20;
+        console.log('b is::' ,b );
+    }
+    f1();
+</script>

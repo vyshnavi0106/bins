@@ -1,0 +1,23 @@
+<script>
+    class Student{
+        firstname='vyshnavi';
+        lastname='shivanathuni';
+
+        fullname1(){
+            console.log(this.firstname,this.lastname);
+        }
+        fullname2=()=>{
+            console.log(this.firstname,this.lastname);
+        }
+    }
+    let std=new Student();
+  //  std.fullname1();//vyshnavi shivanathuni//this=std
+    //std.fullname2();//vyshnavi shivanathuni//this=std
+
+   // setTimeout(std.fullname1, 2000);//undefined undefined
+    //setTimeout(std.fullname2, 4000);//vyshnavi shivanathuni
+    let a=std.fullname2;//assign function to a variable
+    a();//inside fullname2(), this=std
+    let b=a;
+    b();//inside fullname2(), this=std
+</script>

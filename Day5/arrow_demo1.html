@@ -1,0 +1,17 @@
+<script>
+    //thi is window
+    //whatever declared here arrow function can access them 
+    let user={
+        firstname: 'vyshnavi',
+        lastname: 'shivan',
+        fullname1: function(){ //this=user
+            console.log(this.firstname, this.lastname);
+        },
+        fullname2: ()=>{//this=window
+            console.log(this.firstname, this.lastname);
+        }
+    }
+    user.fullname1();//vyshnavi shivan
+    user.fullname2();//undefined undefined
+</script>
+ 
