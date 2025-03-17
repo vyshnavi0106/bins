@@ -1,0 +1,23 @@
+<script>
+    let cars=['tata','hyndai','maruti','toyota'];
+    //for loop
+    for(let i=0;i<cars.length;i++){
+        console.log(cars[i]);
+    }
+    console.log('***************************');
+
+    //for-in // index in array
+    for(ind in cars){//no custom index,nobackward iteration
+        console.log(cars[ind]);
+    }
+
+    //for-of
+    for(car of cars){       //no custom index, no backward, no index itself
+        console.log(car);   
+    }
+
+    //forEach() higherOrder function
+    cars.forEach((val,ind,arr)=>{
+        console.log(val,ind,arr);
+    })
+</script>

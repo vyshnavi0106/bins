@@ -16,3 +16,12 @@ function nrpcfun(a)
    }
 }
 let r = nrpcfun('entertainment');
+
+
+let str='entertainment';
+    for(char of str){//this will iterate trough all the string
+        if(str.indexOf(char)==str.lastIndexOf(char)){
+            console.log(char);
+            break;
+        }
+    }
