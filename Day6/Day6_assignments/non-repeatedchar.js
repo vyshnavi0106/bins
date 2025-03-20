@@ -20,7 +20,7 @@ let r = nrpcfun('entertainment');
 
 let str='entertainment';
     for(char of str){//this will iterate trough all the string
-        if(str.indexOf(char)==str.lastIndexOf(char)){
+        if(str.indexOf(char)==str.lastIndexOf(char)){//checks for non-repeated char
             console.log(char);
             break;
         }

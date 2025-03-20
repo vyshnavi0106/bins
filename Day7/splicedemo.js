@@ -6,7 +6,7 @@ arr.splice(1,2);//only delete from index1 delete 2 items i.e, 20,30
 console.log('after 1st splice', arr);
 
 arr.splice(1,0,20,30)
-console.log('after second splice',arr);[10,20,30,40,50]
+console.log('after second splice',arr);//[10,20,30,40,50]
 
 arr.splice(1,2,25,35);
 console.log('afterthird splice',arr);
